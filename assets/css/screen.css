@@ -1,14 +1,38 @@
-@media (min-width: 920px) {
+/*things that should be gone in small format */
 
-/* for navbar */
+.logo, #breadcrum, img {
+  display: none;
+}
+
+header, nav{
+  background-color: #aed68f;
+}
+
+@media (min-width: 992px) {
+  /*display when bigger*/
+  .logo, #breadcrum {
+    display: inline-block;
+  }
+
+  #breadcrum{
+    margin-bottom: 0;
+  position: relative;
+  top: -25px;
+  left: 2vw;
+
+height: 0
+  }
+  /* for navbar */
+
+
   .navbar-nav {
     margin-left: auto;
     margin-right: auto;
   }
   .logo {
-padding: 0;
-margin-left: 2vw;
-margin-right: 2vw;
+    padding: 0;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
   #Logo {
     max-width: 10vw;
@@ -19,35 +43,33 @@ margin-right: 2vw;
   .navbar-brand {
     display: none;
   }
-nav a{
-  vertical-align: middle;
-  font-size: 1.5rem;
-}
-nav li{
-  padding-left: 2vw;
-  padding-right:2vw;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
+  nav a {
+    vertical-align: middle;
+    font-size: 1.5rem;
+  }
+  nav li {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main h1, main p {
+    text-align: center;
+  }
+  main a {
+    display: block;
+    margin-left: auto;
+    width: 5vw;
+    margin-right: 4vw;
+  }
 
 
-main h1, main p{
-  text-align: center;
-}
-main a{
-  display: block;
-margin-left: auto;
-width: 5vw;
-margin-right: 4vw;
-}
-}
 
-}
-
-@media (max-width: 920px) {
-  /*things that should be gone in small format */
-  .logo, #breadcrum {
-    display: none;
+  #jeugd{
+    background-color: #D6B78F;
+  }
+  #volwassen{
+    background-color: #8faed6;
   }
 }
