@@ -4,27 +4,28 @@
   display: none;
 }
 
-header, nav{
+header, nav {
   background-color: #aed68f;
 }
 
+article {}
+
 @media (min-width: 992px) {
   /*display when bigger*/
-  .logo, #breadcrum {
+  .logo, #breadcrum, img {
     display: inline-block;
   }
-
-  #breadcrum{
+  #breadcrum {
     margin-bottom: 0;
-  position: relative;
-  top: -25px;
-  left: 2vw;
-
-height: 0
+    position: relative;
+    width: 0;
+    height: 0;
+    top: -25px;
+     left: 2vw;
+    height: 0;
+    display: inherit;
   }
   /* for navbar */
-
-
   .navbar-nav {
     margin-left: auto;
     margin-right: auto;
@@ -54,6 +55,10 @@ height: 0
     justify-content: center;
     align-items: center;
   }
+main{
+  margin-top: 4vh;
+}
+
   main h1, main p {
     text-align: center;
   }
@@ -63,13 +68,13 @@ height: 0
     width: 5vw;
     margin-right: 4vw;
   }
-
-
-
-  #jeugd{
-    background-color: #D6B78F;
+  article {
+    border-radius: 15px
   }
-  #volwassen{
+  #jeugd {
+    background-color: #D68FAE;
+  }
+  #volwassen {
     background-color: #8faed6;
   }
 }

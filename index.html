@@ -20,70 +20,25 @@
 </head>
 
 <body>
-  <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ol class="navbar-nav ">
-          <li class="nav-item active">
-            <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Volwassenen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Jeugd</a>
-          </li>
-
-          <li class="nav-item logo">
-            <img id="Logo" class="nav-link" src="images\vondeling_logo.png" alt="Logo Toneelkring De Vondeling">
-
-          </li>
+<div include-html="header.html"></div>
 
 
 
-          <li class="nav-item">
-            <a class="nav-link " href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Geschiedenis</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Voor leden</a>
-          </li>
-        </ol>
-      </div>
-    </nav>
-
-
-
-
-
-
-  </header>
-  <p id="breadcrum">>Home</p>
-
-
-
-
-  <main class="">
+  <main class="col-md-10 offset-sm-1 ">
     <div class="row">
-      <div class="col-md-5 offset-md-1" >
+      <div class="col-md-6 " >
         <article id="volwassen">
           <h1>Volwassenen</h1>
           <p>De volwassen brachten onlangs "Maak plaats mevrouw" bekijk hier de foto's</p>
-          <a href="#">lees meer</a>
+          <a href="volwassen.html">lees meer</a>
         </article>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <article id="jeugd">
           <h1>Jeugd</h1>
           <p>Bij de jeugd zijn we druk bezig met "Het oneindige verhaal" volg hier het verhaal</p>
-          <a href="#">lees meer</a>
+          <a href="jeugd.html">lees meer</a>
         </article>
       </div>
 
@@ -99,7 +54,11 @@
 
   <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/include.js"></script>
+  <script type="text/javascript" src="assets/js/main.js">
+
+  </script>
+
 </body>
 
 </html>
