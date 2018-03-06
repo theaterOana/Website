@@ -4,13 +4,39 @@
   display: none;
 }
 
-header, nav {
-  background-color: #aed68f;
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand:focus, .navbar-light .navbar, .navbar-light .navbar-brand {
+  color: white
 }
 
-article {}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffebb9;
+}
+
+header, nav {
+  background-color: #8a151e;
+}
+
+article {
+  margin-top: 5vh;
+  border-bottom: 1px grey solid
+}
+
+.leesmeer {
+  color: black;
+}
+.leesmeer:hover{
+
+    color: grey
+}
+
+.leesmeer::after {
+  content: ">>>"
+}
 
 @media (min-width: 992px) {
+  html body {
+    color: white
+  }
   /*display when bigger*/
   .logo, #breadcrum, img {
     display: inline-block;
@@ -21,9 +47,10 @@ article {}
     width: 0;
     height: 0;
     top: -25px;
-     left: 2vw;
+    left: 2vw;
     height: 0;
     display: inherit;
+    color: white;
   }
   /* for navbar */
   .navbar-nav {
@@ -44,9 +71,10 @@ article {}
   .navbar-brand {
     display: none;
   }
-  nav a {
+  .navbar-light .navbar-nav .nav-link {
     vertical-align: middle;
     font-size: 1.5rem;
+    color: white;
   }
   nav li {
     padding-left: 2vw;
@@ -55,26 +83,29 @@ article {}
     justify-content: center;
     align-items: center;
   }
-main{
-  margin-top: 4vh;
-}
-
+  main {
+    margin-top: 4vh;
+  }
   main h1, main p {
     text-align: center;
-  }
-  main a {
-    display: block;
-    margin-left: auto;
-    width: 5vw;
-    margin-right: 4vw;
   }
   article {
     border-radius: 15px
   }
+  .leesmeer {
+    color: black;
+    text-align: right;
+    padding-right: 3vw;
+    display:block;
+  }
+
+  .leesmeer:hover{
+  color: #ffebb9
+  }
   #jeugd {
-    background-color: #D68FAE;
+    background-color: #15568A;
   }
   #volwassen {
-    background-color: #8faed6;
+    background-color: #158A48;
   }
 }
