@@ -18,11 +18,11 @@ pageLocationFunction = function(){
   path = path.split("/").pop().split('.')[0];
   console.log(path);
   if (path === "index") {
-    $('#breadcrum').text('Home')
+    $('#breadcrum').html('Home')
     $('#home').addClass('active')
   }
   else {
-    $('#breadcrum').text(path)
+    $('#breadcrum').html(path)
     $('#'+path).addClass('active')
   }
 }
