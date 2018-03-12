@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Toneelkring De Vondeling</title>
+  <title>Theater O'ana</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -13,7 +13,7 @@
 
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets\css\bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/screen.css" rel="stylesheet">
   <meta name="author" content="Matthias Bruynooghe" />
   <meta charset="UTF-8">
@@ -22,17 +22,61 @@
 
 <body>
 
-<div include-html="header.html"></div>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light aria-controls col-md-10 ">
+      <a class="navbar-brand offset-sm-1" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ">
+          <li class="nav-item  col-md-2">
+            <a class="nav-link active" id="home" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item  col-md-2">
+            <a class="nav-link " id="overOns" href="overOns.html">Over Ons</a>
+          </li>
+          <li class="nav-item  col-md-2">
+            <a class="nav-link " id="fotos" href="fotos.html">Fotos</a>
+          </li>
+
+          <li class="nav-item logo  col-md-2">
+            <a href="index.html">            <img id="Logo" class="nav-link" src="images\Logo-Oana.png" alt="Logo Theater O'ana">  </img>
+  </a>
+
+          </li>
+
+
+
+          <li class="nav-item  col-md-2">
+            <a class="nav-link " id="contact" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item  col-md-2">
+            <a class="nav-link " id="geschiedenis" href="geschiedenis.html">Geschiedenis</a>
+          </li>
+          <li class="nav-item  col-md-2">
+            <a class="nav-link " id="voorleden" href="voorleden.html">Voor leden</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <p id="breadcrum">home</p>
+  </header>
+
 
 
 
   <main class="col-md-10 offset-sm-1 ">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-5">
         <article class="jeugd">
-          <h1>Jeugd</h1>
-          <p>Bij de jeugd zijn we druk bezig met "Het oneindige verhaal" volg hier het verhaal</p>
-          <a href="jeugd.html" class="leesmeer">lees meer</a>
+          <h1>Nieuw Theatergezelschap: O'ana</h1>
+          <p>Sinds 7 maart bestaat het een nieuw Theatergezelschap in Torhout: Theater O'ana.</p><p> Deze groep komt voort uit de jeugdwerking binnen Toneelkring de Vondeling en gaat verder met de activiteiten van die groep maar op zelfstandige basis.</p><p> Alle geplande
+            activiteiten gaan gewoon door, maar nu onder een andere naam.</p>
+<a href="leesmeer.html" class="leesmeer">lees meer</a>
         </article>
       </div>
 
@@ -46,11 +90,9 @@
 
 
 
-  <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/include.js"></script>
   <script type="text/javascript" src="assets/js/main.js">
-
   </script>
 
 </body>
