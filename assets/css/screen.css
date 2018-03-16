@@ -33,6 +33,7 @@ article {
   margin-top: 5vh;
   border-bottom: 1px grey solid;
 
+
 }
 
 .navbar-light .navbar-nav .nav-link.active{
@@ -63,7 +64,15 @@ article {
   color: #800000;
 }
 
-@media (min-width: 992px) {
+article p{
+  display: none;
+}
+
+article p:first-of-type{
+  display: block;
+}
+
+@media (min-width: 768px) {
   html body {
     color: white;
 
@@ -71,6 +80,10 @@ article {
   body{
     background-color: #800000
   }
+
+main .col-sm-12{
+    max-width: 41.66666%
+}
 
 article{
   content: normal;
@@ -84,6 +97,11 @@ article{
 
 
 
+
+}
+
+article p{
+  display: block;
 }
 
 
