@@ -78,7 +78,9 @@ article{
   background-position: 50% 5%;
   background-size: 75px;
   background-color: #357;
-  padding-top: 50px
+  padding-top: 50px;
+  border-radius: 20px 0 20px 0;
+  border: 8px double #4f4533;
 
 
 
@@ -150,10 +152,7 @@ article{
 main h1,  main p:first-child{
     margin-top: 4%
   }
-  article {
-    border-radius: 15px;
-    border: 8px solid #000;
-  }
+
   .leesmeer {
     color: black;
     text-align: right;
