@@ -71,8 +71,19 @@ article p{
 article p:first-of-type{
   display: block;
 }
+@media (min-width: 767px) {
 
-@media (min-width: 768px) {
+article{
+  padding-top: 70px
+}
+
+}
+
+
+
+
+
+@media (min-width: 992px) {
   html body {
     color: white;
 
@@ -181,9 +192,4 @@ main h1,  main p:first-child{
   .leesmeer:hover{
   color: white
   }
-  .jeugd {
-      ;
-
-  }
-
 }
