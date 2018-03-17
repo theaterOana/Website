@@ -1,9 +1,5 @@
-/*things that should be gone in small format */
-
-body{
 
 
-}
 header::after{
   content:'';
     width:100%;
@@ -75,6 +71,23 @@ article p:first-of-type{
   max-width: 80%
 }
 
+figure img, figure figcaption{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 75%
+}
+figure img{
+    margin-top: 5%;
+    max-height: 26vh
+}
+
+figure figcaption{
+  text-align: center;
+  margin-top: 3%;
+  height:10vh;
+}
 
 
 @media (min-width: 767px) {
@@ -103,7 +116,7 @@ main .col-sm-12{
     max-width: 41.66666%
 }
 
-article{
+article, figure{
   content: normal;
   background:transparent url("../media/Oana_Icon.png") no-repeat;
   background-position: 50% 5%;
@@ -120,6 +133,7 @@ article{
 
 article p{
   display: block;
+  font-size: 1.3rem
 }
 
 
