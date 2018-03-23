@@ -15,6 +15,10 @@ header::after{
     background: linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, #357 100%);
 }
 
+.row {
+  margin-bottom: 2vh
+}
+
 
 header, nav {
   background-color: #357;
@@ -59,9 +63,7 @@ article {
 
 
 
-article p{
-  display: none;
-}
+
 
 article p:first-of-type{
   display: block;
@@ -113,7 +115,11 @@ article{
   }
 
 main .col-sm-12{
-    max-width: 41.66666%
+    max-width: 46%
+}
+
+main .col-sm-12:nth-of-type(2){
+    margin-left: 4%
 }
 
 article, figure{
