@@ -6,17 +6,16 @@ require_once("Head.php");
 
 
 
- <main class="col-md-10 offset-sm-1 ">
-   <div class="row">
-
-     <div class=" col-md-12">
-       <article >
-        <h1>Deze pagina is nog in opbouw. Hierdoor kunnen er enkele problemen optreden bij het bekijken van onze pagina. We werken eraan om de pagina zo snel mogelijk af te werken.</h1>
-       </article>
-     </div>
-   </div>
 
    <main class="col-md-10 offset-sm-1 ">
+
+       <div class="row">
+
+           <div class=" col-md-12">
+               <article >
+                   <h1>Deze pagina is nog in opbouw. Hierdoor kunnen er enkele problemen optreden bij het bekijken van onze pagina. We werken eraan om de pagina zo snel mogelijk af te werken.</h1>
+               </article>
+           </div>
      <div class="row">
 
          <div class=" col-sm-12">
