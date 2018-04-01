@@ -1,4 +1,7 @@
-
+:root{
+  --main: #3e0101;
+  --sub:  #ffc452
+}
 
 header::after{
   content:'';
@@ -7,12 +10,9 @@ header::after{
     left:0;
     height: 50px;
     background: #333;
-    background: -webkit-gradient(linear, top top, right top, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(100%, #357 ));
-    background: -webkit-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%,  #357 100%);
-    background: -moz-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%,  #357 100%);
-    background: -ms-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%,  #357 100%);
-    background: -o-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%,  #357 100%);
-    background: linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%, #357 100%);
+
+    background: -webkit-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0%,  var(--main) 100%);
+
 }
 
 .row {
@@ -21,10 +21,15 @@ header::after{
 
 
 header, nav {
-  background-color: #357;
+  background-color: var(--main);
+
+
 
 
 }
+
+
+
 main{
   margin-top: 50px
 }
@@ -37,11 +42,11 @@ article {
 }
 
 .navbar-light .navbar-nav .nav-link.active{
-  color:  black;
+  color:  #710a25;
 }
 
 .leesmeer {
-  color: black;
+  color: #710a25;
 }
 .leesmeer:hover{
 
@@ -61,6 +66,9 @@ article {
   font-size: 2rem;
 }
 
+.row{
+  margin-right: 0;
+}
 
 
 
@@ -111,26 +119,24 @@ article{
 
   }
   body{
-    background-color: #800000
+    background-color: var(--sub);
   }
 
 main .col-sm-12{
-    max-width: 46%
+    max-width: 100%
 }
 
-main .col-sm-12:nth-of-type(2){
-    margin-left: 4%
-}
+
 
 article, figure{
   content: normal;
   background:transparent url("../media/Oana_Icon.png") no-repeat;
   background-position: 50% 5%;
   background-size: 75px;
-  background-color: #357;
+  background-color: var(--main);
   padding-top: 50px;
   border-radius: 50px 0 50px 0;
-  border: 8px double #4f4533;
+  border: 8px double #66081e;
 
 
 
@@ -139,7 +145,7 @@ article, figure{
 
 article p{
   display: block;
-  font-size: 1.3rem
+  font-size: 1.4rem
 }
 
 
@@ -176,7 +182,7 @@ article p{
   }
 
   .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #800000;
+    color: #548CC3;
   }
   /*display when bigger*/
   .logo, #breadcrum, img {

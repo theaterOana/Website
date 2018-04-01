@@ -30,6 +30,7 @@ $_breadcrum = str_replace("_", " ", $_url);
  <meta name="author" content="Matthias Bruynooghe" />
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@ $_breadcrum = str_replace("_", " ", $_url);
 
  <header>
 
-   <nav class="navbar navbar-expand-lg navbar-light aria-controls col-md-10 ">
+   <nav class="navbar navbar-expand-lg navbar-dark aria-controls col-md-10 ">
      <a class="navbar-brand offset-sm-1" href="#"><?php echo $_breadcrum; ?></a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
