@@ -10,9 +10,10 @@ require_once("Head.php");
     <div class="row">
         <div class="col-md-10 offset-md-1">
             <article class="">
-                <h1>E-mail</h1>
+                <h1>Contact</h1>
                 <p>Je kan ons altijd een mailtje sturen via <a
                             href="mailto:info@theater-oana.be">info@theater-oana.be</a>. </p>
+                <p></p>
 
 
                 <?php
@@ -38,21 +39,21 @@ require_once("Head.php");
                         "</form>";
                 }
 
-                if (isset($_POST["email"]) && isset($_POST["message"])) {
+                if (isset($_POST["naam"]) && isset($_POST["message"])) {
 
 
 
 
 
 
-                    if (empty($_POST["message"]) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    if (empty($_POST["message"]) && !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
                         echo "<p>Je moet nog de volgende velden invullen of verbeteren: ";
                         echo (isset($_POST["email"]) && $_POST["email"] != "" ? "e-mail " : "") . (isset($_POST["message"]) && $_POST["message"] != "" ? "bericht" : "") . "</p>";
                         echoForm();
 
 
                     } else {
-                        $to = "matthias.bruynooghe@gmail.com";
+                        $to = "info@theater-oana.be";
                         $subject = "Een mail van de pagina van " . $_POST["naam"];
                         $txt = $_POST["message"];
                         $headers = "From: " . $_POST["email"];
@@ -86,6 +87,9 @@ require_once("Head.php");
 
             </article>
         </div>
+
+
+
 
     </div>
 </main>

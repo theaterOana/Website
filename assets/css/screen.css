@@ -1,6 +1,6 @@
 :root {
     --main: #3e0101;
-    --sub: #ffc452
+    --sub: #fff3db
 }
 
 header::after {
@@ -110,6 +110,8 @@ form #message {
 form {
 
 }
+
+
 
 @media (min-width: 767px) {
 
@@ -240,6 +242,13 @@ form {
         text-align: center;
         margin-top: 2vh;
         margin-bottom: 2vh;
+    }
+
+    article img {
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      padding-bottom: 3vh;
     }
 
 }
