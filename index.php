@@ -1,4 +1,4 @@
-  <?php
+   <?php
 
 require_once("Head.php");
  ?>
@@ -21,7 +21,7 @@ require_once("Head.php");
        <div class=" col-sm-12">
            <article >
                <h1>Die unendliche feste</h1>
-               <p>Geniet een avond van een echt Duits buurtfeest! Op 6 mei organiseert Theater O’ana “Die Unendliche Feste”. Laat je onderdompelen in een Duitse sfeer met een lekkere maaltijd en natuurlijk de nodige Schlagermuziek! Schrijf je nu in en ondersteun ons bij het maken van onze eerste productie “Het Oneindige Verhaal”. <a href="https://goo.gl/forms/uGMaKLbUDxcQIyd02">Ik schrijf me in!</a> </p>
+               <p>Geniet een avond van een echt Duits buurtfeest! Op 6 mei organiseert Theater O’ana “Die Unendliche Feste”. Laat je onderdompelen in een Duitse sfeer met een lekkere maaltijd en natuurlijk de nodige Schlagermuziek! Schrijf je nu in en ondersteun ons bij het maken van onze eerste productie “Het Oneindige Verhaal”. <a href="https://goo.gl/forms/uGMaKLbUDxcQIyd02">Klik hier om je in te schrijven.</a> </p>
 <a href="https://goo.gl/forms/uGMaKLbUDxcQIyd02"><img src="https://media.discordapp.net/attachments/426116644767531010/433669925886754827/Flyer_Unendliche_Feste.jpg?width=478&height=679" alt="Flyer_Unendliche_Feste"></a>
 
            </article>
