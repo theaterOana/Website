@@ -18,12 +18,12 @@ require_once("Head.php");
            </div>
      <div class="row">
 
-    
+      
 
          <div class=" col-sm-12">
              <article >
                  <h1>Het Oneindige Verhaal</h1>
-                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie “Het Oneindige Verhaal”. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
+                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie â€œHet Oneindige Verhaalâ€�. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
              </article>
          </div>
 
@@ -35,7 +35,8 @@ require_once("Head.php");
        <a href="Over_Ons.php" class="leesmeer">lees meer</a>
          </article>
        </div>
-
+       </div>
+</div>
 
  </main>
 
@@ -43,9 +44,19 @@ require_once("Head.php");
  <section class="sponsors">
 
  </section>
+<script type="text/javascript">
+ if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
 
-
-
+//Register the ServiceWorker
+  navigator.serviceWorker.register('sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}
+</script>
 
  <?php
 
