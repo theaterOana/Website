@@ -1,74 +1,58 @@
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
-  '/',
-  '/css/main.css',
-  '/js/main.js'
-];
+//This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
+//Install stage sets up the offline page in the cahche and opens a new cache
 self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
+  event.waitUntil(preLoad());
 });
 
-self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request)
-    .then(function (response) {
-      // Cache hit - return response
-      if (response) {
-        return response;
+var preLoad = function(){
+  console.log('[PWA Builder] Install Event processing');
+  return caches.open('pwabuilder-offline').then(function(cache) {
+    console.log('[PWA Builder] Cached index and offline page during Install');
+    return cache.addAll([
+
+'index.php'
+      ]);
+  });
+}
+
+self.addEventListener('fetch', function(event) {
+  console.log('The service worker is serving the asset.');
+  event.respondWith(checkResponse(event.request).catch(function() {
+    return returnFromCache(event.request)}
+  ));
+  event.waitUntil(addToCache(event.request));
+});
+
+var checkResponse = function(request){
+  return new Promise(function(fulfill, reject) {
+    fetch(request).then(function(response){
+      if(response.status !== 404) {
+        fulfill(response)
+      } else {
+        reject()
       }
+    }, reject)
+  });
+};
 
-      // IMPORTANT: Clone the request. A request is a stream and
-      // can only be consumed once. Since we are consuming this
-      // once by cache and once by the browser for fetch, we need
-      // to clone the response.
-      var fetchRequest = event.request.clone();
+var addToCache = function(request){
+  return caches.open('pwabuilder-offline').then(function (cache) {
+    return fetch(request).then(function (response) {
+      console.log('[PWA Builder] add page to offline'+response.url)
+      return cache.put(request, response);
+    });
+  });
+};
 
-      return fetch(fetchRequest).then(
-        function (response) {
-          // Check if we received a valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // IMPORTANT: Clone the response. A response is a stream
-          // and because we want the browser to consume the response
-          // as well as the cache consuming the response, we need
-          // to clone it so we have two streams.
-          var responseToCache = response.clone();
-
-          caches.open(CACHE_NAME)
-            .then(function (cache) {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        }
-      );
-    })
-  );
-});
-
-self.addEventListener('activate', function (event) {
-
-  var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
-
-  event.waitUntil(
-    caches.keys().then(function (cacheNames) {
-      return Promise.all(
-        cacheNames.map(function (cacheName) {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
+var returnFromCache = function(request){
+  return caches.open('pwabuilder-offline').then(function (cache) {
+    return cache.match(request).then(function (matching) {
+     if(!matching || matching.status == 404) {
+       return cache.match('offline.html')
+     } else {
+       return matching
+     }
+    });
+  });
+};

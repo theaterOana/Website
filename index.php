@@ -18,19 +18,12 @@ require_once("Head.php");
            </div>
      <div class="row">
 
-       <div class=" col-sm-12">
-           <article >
-               <h1>Die unendliche feste</h1>
-               <p>Geniet een avond van een echt Duits buurtfeest! Op 6 mei organiseert Theater O’ana “Die Unendliche Feste”. Laat je onderdompelen in een Duitse sfeer met een lekkere maaltijd en natuurlijk de nodige Schlagermuziek! Schrijf je nu in en ondersteun ons bij het maken van onze eerste productie “Het Oneindige Verhaal”. <a href="https://goo.gl/forms/uGMaKLbUDxcQIyd02">Klik hier om je in te schrijven.</a> </p>
-<a href="https://goo.gl/forms/uGMaKLbUDxcQIyd02"><img src="https://media.discordapp.net/attachments/426116644767531010/433669925886754827/Flyer_Unendliche_Feste.jpg?width=478&height=679" alt="Flyer_Unendliche_Feste"></a>
-
-           </article>
-       </div>
+      
 
          <div class=" col-sm-12">
              <article >
                  <h1>Het Oneindige Verhaal</h1>
-                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie “Het Oneindige Verhaal”. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
+                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie â€œHet Oneindige Verhaalâ€�. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
              </article>
          </div>
 
@@ -42,7 +35,8 @@ require_once("Head.php");
        <a href="Over_Ons.php" class="leesmeer">lees meer</a>
          </article>
        </div>
-
+       </div>
+</div>
 
  </main>
 
@@ -50,6 +44,19 @@ require_once("Head.php");
  <section class="sponsors">
 
  </section>
+<script type="text/javascript">
+ if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}
+</script>
 
 
  <?php
