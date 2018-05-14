@@ -7,21 +7,24 @@ var precacheFiles = [
   'assets/css/screen.css',
     'assets/js/bootstrap.min.js',
       'images/Claudine.jpg',
-  'images/Elien.jpg',
-  'images/Jana.jpg',
-  'images/Jonas.jpg',
-  'images/Logo-Oana.png',
-  'images/Matthias.jpg',
-  'images/Sylke.jpg',
-  'images/browserconfig.xml',
-  'images/geschied/02.jpg',
-  'images/geschied/04.jpg',
-  'images/geschied/05.jpg',
-  'images/oneindigeVerhaal.jpg',
-  'images/ticketwinkel_logo.png',
+    'images/Elien.jpg',
+    'images/Jana.jpg',
+    'images/Jonas.jpg',
+    'images/Logo-Oana.png',
+    'images/Matthias.jpg',
+    'images/Sylke.jpg',
+    'images/browserconfig.xml',
+    'images/geschied/02.jpg',
+    'images/geschied/04.jpg',
+    'images/geschied/05.jpg',
+    'images/oneindigeVerhaal.jpg',
+    'images/ticketwinkel_logo.png',
+    'sw.js',
+    'manifest.json',
     'index.php',
-      'index.php',
-        'Voor_Leden.php',
+    'Voor_Leden.php',
+    'huidige_productie.php',
+    'Over_Ons.php'
     ];
 
 //Install stage sets up the cache-array to configure pre-cache content
@@ -49,9 +52,16 @@ self.addEventListener('fetch', function(evt) {
 
 
 function precache() {
-  return caches.open(CACHE).then(function (cache) {
-    return cache.addAll(precacheFiles);
-  });
+  
+      return caches.open(CACHE).then(function (cache) {
+        return Promise.all(
+            precacheFiles.map(function (url) {
+                return cache.add(url).catch(function (reason) {
+                    return console.log(url + "failed: " + String(reason));
+                })
+            })
+        );
+    });
 }
 
 
