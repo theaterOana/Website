@@ -18,7 +18,7 @@ require_once("Head.php");
            </div>
      <div class="row">
 
-      
+
 
          <div class=" col-sm-12">
              <article >
@@ -44,19 +44,19 @@ require_once("Head.php");
  <section class="sponsors">
 
  </section>
-<script type="text/javascript">
- if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
+ <script type="text/javascript">
+ 	if (navigator.serviceWorker.controller) {
+
 } else {
 
 //Register the ServiceWorker
   navigator.serviceWorker.register('sw.js', {
     scope: './'
   }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
+
   });
 }
-</script>
+ </script>
 
  <?php
 
