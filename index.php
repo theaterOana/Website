@@ -13,7 +13,7 @@ require_once("Head.php");
 
            <div class=" col-md-12">
                <article >
-                   <h1>Deze pagina is nog in opbouw. Hierdoor kunnen er enkele problemen optreden bij het bekijken van onze pagina. We werken eraan om de pagina zo snel mogelijk af te werken.</h1>
+                   <p>Deze pagina is nog in opbouw. Hierdoor kunnen er enkele problemen optreden bij het bekijken van onze pagina. We werken eraan om de pagina zo snel mogelijk af te werken.</p>
                </article>
            </div>
      <div class="row">
@@ -23,7 +23,7 @@ require_once("Head.php");
          <div class=" col-sm-12">
              <article >
                  <h1>Het Oneindige Verhaal</h1>
-                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie â€œHet Oneindige Verhaalâ€�. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
+                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie. Het Oneindige Verhaal. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
              </article>
          </div>
 
@@ -45,16 +45,14 @@ require_once("Head.php");
 
  </section>
  <script type="text/javascript">
- 	if (navigator.serviceWorker.controller) {
+  if (navigator.serviceWorker.controller) {
 
 } else {
 
 //Register the ServiceWorker
   navigator.serviceWorker.register('sw.js', {
     scope: './'
-  }).then(function(reg) {
-
-  });
+  })
 }
  </script>
 

@@ -26,7 +26,7 @@ require_once("Head.php");
 
                 function echoForm()
                 {
-                    echo "<form action='#' method='post' ><div><label for=\"naam\">Je naam:</label>" .
+                    echo "<form action='contact.php' method='post' ><div><label for=\"naam\">Je naam:</label>" .
                         "<input type=\"text\" id=\"naam\" name=\"naam\" content='" . (isset($_POST["naam"]) ? $_POST["naam"] : "") . "'></div>" .
 
                         "<div><label for=\"email\">Je e-mail adres:</label>" .
@@ -35,7 +35,7 @@ require_once("Head.php");
                         "<div><label for=\"message\">Je bericht:</label>" .
                         "<textarea id=\"message\" name=\"message\" content=\"" . (isset($_POST["message"]) ? $_POST["message"] : "") . "\"></textarea></div> " .
 
-                        "<input type=\"submit\">" .
+                        "<input type=\"submit\" class=\"btn\">" .
                         "</form>";
                 }
 
