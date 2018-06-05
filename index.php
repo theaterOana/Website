@@ -23,8 +23,43 @@ require_once("Head.php");
          <div class=" col-sm-12">
              <article >
                  <h1>Het Oneindige Verhaal</h1>
-                 <p>Audities voor onze huidige productie zijn reeds achter de rug en momenteel zijn we begonnen met de repetities samen met 24 jongeren voor onze allereerste productie. Het Oneindige Verhaal. Deze productie wordt geregisseerd door Sylke Vanrietvelde.</p><p> Hou onze website in de gaten voor meer informatie over de huidige productie en onze nevenactiviteiten.</p>
-             </article>
+                 <p>Ondertussen is de ticketverkoop gestart! De tickets zijn te verkrijgen op ticketwinkel.be</p>
+                 <div>
+                     <h4>Tickets bestellen</h4>
+                     <table class="table table-bordered table-striped">
+                         <thead>
+                         <tr>
+                             <th>Locatie</th>
+                             <th>Datum en uur</th>
+                             <th>Beschikbaarheid</th>
+                         </tr>
+                         </thead>
+                         <tbody><tr>
+                             <td class="align-middle">CC De Brouckere Torhout</td>
+                             <td class="align-middle">
+
+                                 vrijdag 21 september 2018 - 20:00</td>
+
+                             <td class="align-middle align-center"><a class="btn btn-primary" href="https://www.ticketwinkel.be/Event/OrderTickets/641">Tickets bestellen</a></td>
+                         </tr>
+                         <tr>
+                             <td class="align-middle">CC De Brouckere Torhout</td>
+                             <td class="align-middle">
+
+                                 zaterdag 22 september 2018 - 14:30</td>
+
+                             <td class="align-middle align-center"><a class="btn btn-primary" href="https://www.ticketwinkel.be/Event/OrderTickets/642">Tickets bestellen</a></td>
+                         </tr>
+                         <tr>
+                             <td class="align-middle">CC De Brouckere Torhout</td>
+                             <td class="align-middle">
+
+                                 zaterdag 22 september 2018 - 20:00</td>
+
+                             <td class="align-middle align-center"><a class="btn btn-primary" href="https://www.ticketwinkel.be/Event/OrderTickets/643">Tickets bestellen</a></td>
+                         </tr>
+                         </tbody></table>
+                 </div>
          </div>
 
        <div class=" col-sm-12">
