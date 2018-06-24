@@ -23,14 +23,13 @@ $_breadcrum = str_replace("_", " ", $_url);
  <meta name="msapplication-TileColor" content="#ffc40d">
  <meta name="theme-color" content="#ffffff">
 
- <link href="/assets/css/reset.css" rel="stylesheet">
+
  <link href="/assets\css\bootstrap.min.css" rel="stylesheet">
  <link href="/assets/css/header.css" rel="stylesheet">
  <link href="/assets/css/screen.css" rel="stylesheet">
  <meta name="author" content="Matthias Bruynooghe" />
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
