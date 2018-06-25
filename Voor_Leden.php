@@ -2,12 +2,18 @@
 <?php
 
 require_once("Head.php");
+require_once("Repo.php");
+
  ?>
 
   <main class="col-md-10 offset-sm-1 ">
     <div class="row">
       <div class="col-md-12">
+<?php
+$db = new Repo();
+$db.getAllLeden();
 
+?>
       </div>
 
     </div>
@@ -16,13 +22,7 @@ require_once("Head.php");
 
 
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js">
 
-  </script>
-
-</body>
 
 <?php
 
