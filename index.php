@@ -24,7 +24,7 @@ require_once("Head.php");
              <article >
                  <h1>Het Oneindige Verhaal</h1>
                  <p>Ondertussen is de ticketverkoop gestart! De tickets zijn te verkrijgen op ticketwinkel.be</p>
-                 <div class="col-md-12">
+                 <div class="col-md-10 offset-md-1">
                      <h4>Tickets bestellen</h4>
                      <table class="table table-bordered table-striped">
                          <thead>
