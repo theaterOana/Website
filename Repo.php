@@ -3,7 +3,7 @@
 class Repo
 {
 
-    private $servername = "www90.totaalholding.nl";
+    private $servername = "www90.totaalholding.nl:3306";
     private $username = "theate1q_VoorLeden";
     private $password = "(V+$?%!~f}UX";
     private $conn;
