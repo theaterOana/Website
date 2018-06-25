@@ -11,7 +11,7 @@ require_once("Repo.php");
       <div class="col-md-12">
 <?php
 $db = new Repo();
-$db.getAllLeden();
+$db->getAllLeden();
 
 ?>
       </div>

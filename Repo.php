@@ -3,18 +3,21 @@
 class Repo
 {
 
+
+    private $conn;
     private $servername = "www90.totaalholding.nl:3306";
     private $username = "theate1q_VoorLeden";
     private $password = "(V+$?%!~f}UX";
-    private $conn;
 
 public function __construct()
 {
 
+
     try
     {
 
-        $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+
+        $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Connected successfully";
@@ -30,7 +33,7 @@ public function __construct()
 
 public function getAllLeden(){
     $sql = "SELECT * FROM `Leden`";
-    $result = $conn->query($sql);
+    $result = $this->conn->query($sql);
 
     if ($result->num_rows > 0) {
         echo "<table><tr><th>ID</th><th>Name</th></tr>";
