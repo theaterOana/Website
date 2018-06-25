@@ -69,13 +69,6 @@ require_once("Head.php");
 
         </div>
 
-        <div class="col-md-4">
-            <figure>
-                <img src="images/Claudine.jpg" alt="Claudine Balcean">
-                <figcaption>Claudine Balcean, Administrative ondersteuning</figcaption>
-            </figure>
-
-        </div>
 
     </div>
 </main>
