@@ -18,7 +18,7 @@ require_once("Head.php");
                     daarnaast ondersteuning van volwassenen.</p>
 
                 <p> Theater O’ana is dus een gloednieuwe vereniging die jongeren de kans wil geven om ervaring op te
-                    doen in de theaterwereld. Elk jaar brengen we een nieuwe producties, telkens onder leiding van een
+                    doen in de theaterwereld. Elk jaar brengen we een nieuwe productie, telkens onder leiding van een
                     andere regisseur.</p>
 
             </article>
