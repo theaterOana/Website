@@ -49,7 +49,7 @@ function register(){
 
 function loginForms(){
     echo('
-     <form action="Voor_Leden.php" method="post" id="accountForm" class="frame">
+     <form action="Voor_Leden.php" method="post" class="frame">
 <h1>Inloggen</h1>
 <div><label for="UserName">Gebruikersnaam</label><input type="text" placeholder="Je gebruikersnaam" name="UserName"></div>
 <div> <label for="Wachtwoord">Wachtwoord</label><input type="password" name="Wachtwoord"></div>
@@ -57,7 +57,7 @@ function loginForms(){
         <input type="hidden" name="Login" value="Login">
     </form>
 
-    <form action="Voor_Leden.php" method="post" id="accountForm" class="frame">
+    <form action="Voor_Leden.php" method="post" class="frame">
 <h1>Registreren</h1>
 <div><label for="Voornaam">Voornaam</label><input type="text" placeholder="Je voornaam"  name="Voornaam"></div>
 <div><label for="Familienaam">Familienaam</label><input type="text" placeholder="Je familienaam" name="Familienaam"></div>

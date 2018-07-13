@@ -7,7 +7,7 @@ require_once("Head.php");
 
 
 
-   <main class="col-md-10 offset-sm-1 ">
+   <main class="col-md-10 offset-md-1 ">
 
        <div class="row">
 
