@@ -27,7 +27,7 @@ main {
     margin-right: auto
 }
 
-article, .frame{
+article , .frame {
     margin-top: 5vh;
     border-bottom: 1px grey solid
 }
@@ -58,7 +58,7 @@ article, .frame{
     margin-right: 0
 }
 
-article p:first-of-type, .frame p:first-of-type {
+article p:first-of-type, .frame {
     display: block
 }
 
@@ -99,10 +99,12 @@ li {
 }
 
 @media (min-width: 768px) {
-    article, .frame{
+    article, .frame {
         padding-top: 70px
     }
-
+    article> :first-child, .frame> :first-child {
+        margin-top: 7vh;
+    }
     .col-md-2 {
         -webkit-box-flex: 0;
         -ms-flex: none;
@@ -128,7 +130,7 @@ li {
         background: url(../media/Oana_Icon.png) 50% 5% no-repeat;
         background-size: 75px;
         background-color: var(--main);
-        padding-top: 50px;
+        padding-top: 0px;
         border-radius: 50px 0;
         border: 8px double #66081e
     }
@@ -151,7 +153,9 @@ li {
 
     #Logo, article img, .frame img {
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        display: block;
+        padding-bottom: 3vh
     }
 
     #Logo {
@@ -208,9 +212,6 @@ li {
         margin-top: .7rem
     }
 
-    main h1, main p:first-child {
-        margin-top: 4%
-    }
 
     .leesmeer {
         color: #000;
@@ -229,8 +230,6 @@ li {
         margin-bottom: 2vh
     }
 
-    article img, .frame img {
-        display: block;
-        padding-bottom: 3vh
-    }
+
+
 }
