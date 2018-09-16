@@ -9,13 +9,7 @@ require_once("Head.php");
 
    <main class="col-md-10 offset-md-1 ">
 
-       <div class="row">
 
-           <div class=" col-md-12">
-               <article >
-                   <p>Deze pagina is nog in opbouw. Hierdoor kunnen er enkele problemen optreden bij het bekijken van onze pagina. We werken eraan om de pagina zo snel mogelijk af te werken.</p>
-               </article>
-           </div>
      <div class="row">
 
 

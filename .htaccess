@@ -36,3 +36,15 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+
+    Listen IP_ADDR:80
+    NameVirtualHost IP_ADDR:80
+
+    <VirtualHost IP_ADDR:80>
+      ServerName  mail.theater-oana.be
+
+      ProxyPass        / https://theater-oana.be:2096/
+      ProxyPassReverse / https://theater-oana.be:2096/
+
+    </VirtualHost>

@@ -77,16 +77,19 @@ function loginForms(){
 function login(){
 
     if($GLOBALS["db"]->checkPasswordFor($_POST["UserName"], $_POST["Wachtwoord"])==true){
+
         $_SESSION["LoggedIn"]=true;
         require_once("VoorLedenLoggedIn.php");
     }
     else{
+
         echo ("<div class='frame'>
                      <p>Inloggen is mislukt</p>
                      
                     </div>");
 
     }
+    echo "logging in";
 }
 ?>
 
@@ -100,6 +103,7 @@ function login(){
                loggedIn();
 
             } else {
+
                 notLoggedIn();
 
 

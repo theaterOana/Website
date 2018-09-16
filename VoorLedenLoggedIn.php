@@ -34,8 +34,12 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 
 
 
+
     ?>
 
+    <p>500 tickets: filmnamiddag met hapje en drankje</p>
+    <p>750 tickets:  terugkomdag in november in de Kegel of Yeti</p>
+    <p>1000 tickets: groepsreis  naar Efteling</p>
 </div>
 
 
