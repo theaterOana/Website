@@ -11,8 +11,8 @@ require_once("Head.php");
         <div class="col-md-10 offset-md-1">
             <article class="">
                 <h1>Contact</h1>
-                <p>Je kan ons altijd een mailtje sturen via <a
-                            href="mailto:info@theater-oana.be">info@theater-oana.be</a>. </p>
+                <p>Wij staan open voor vragen, suggesties, opmerkingen… Hiervoor kan je ons bereiken op  <a
+                            href="mailto:info@theater-oana.be">info@theater-oana.be</a> of stuur je een bericht via onderstaand formulier. </p>
                 <p></p>
 
 
