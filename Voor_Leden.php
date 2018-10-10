@@ -89,7 +89,7 @@ function login(){
                     </div>");
 
     }
-    echo "logging in";
+
 }
 ?>
 

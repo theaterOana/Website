@@ -36,7 +36,7 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 
 
     ?>
-<p>Op dit moment worden de laatste tickets geteld, kom later terug om te zien wat de uiteindelijke hoeveelheid is.</p>
+
     <p>500 tickets: filmnamiddag met hapje en drankje</p>
     <p>750 tickets:  terugkomdag in november in de Kegel of Yeti</p>
     <p>1000 tickets: groepsreis  naar Efteling</p>
