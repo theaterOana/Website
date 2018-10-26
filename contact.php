@@ -11,9 +11,8 @@ require_once("Head.php");
         <div class="col-md-10 offset-md-1">
             <article class="">
                 <h1>Contact</h1>
-                <p>Wij staan open voor vragen, suggesties, opmerkingen… Hiervoor kan je ons bereiken op  <a
-                            href="mailto:info@theater-oana.be">info@theater-oana.be</a> of stuur je een bericht via onderstaand formulier. </p>
-                <p></p>
+
+
 
 
                 <?php
@@ -73,7 +72,8 @@ require_once("Head.php");
                 } else {
 
 
-                    echo "<p>Of een berichtje sturen via het volgende formulier.</p>";
+                  echo '<p>Wij staan open voor vragen, suggesties, opmerkingen… Hiervoor kan je ons bereiken op  <a
+                              href="mailto:info@theater-oana.be">info@theater-oana.be</a> of stuur je een bericht via onderstaand formulier. </p>';
 
 
                     echoForm();

@@ -25,9 +25,9 @@ $_breadcrum = str_replace("_", " ", $_url);
  <meta name="theme-color" content="#ffffff">
 
 
- <link href="/assets\css\bootstrap.min.css" rel="stylesheet">
- <link href="/assets/css/header.css" rel="stylesheet">
- <link href="/assets/css/screen.css" rel="stylesheet">
+ <link href="assets\css\bootstrap.min.css" rel="stylesheet">
+ <link href="assets/css/header.css" rel="stylesheet">
+ <link href="assets/css/screen.css" rel="stylesheet">
  <meta name="author" content="Matthias Bruynooghe" />
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,4 +81,6 @@ $_breadcrum = str_replace("_", " ", $_url);
   echo $_breadcrum;
 
       ?></p>
+
+      
  </header>
