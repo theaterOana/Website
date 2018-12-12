@@ -25,7 +25,7 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
     $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") - 3 - 12*3;
     $maxSellAmount = 1089;
 
-    echo "<p>".$amountSold." tickets verkocht</p>"
+  //  echo "<p>".$amountSold." tickets verkocht</p>"
 
 
 
@@ -36,10 +36,7 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 
 
     ?>
-<p>Op dit moment worden de laatste tickets geteld, kom later terug om te zien wat de uiteindelijke hoeveelheid is.</p>
-    <p>500 tickets: filmnamiddag met hapje en drankje</p>
-    <p>750 tickets:  terugkomdag in november in de Kegel of Yeti</p>
-    <p>1000 tickets: groepsreis  naar Efteling</p>
+
 </div>
 
 
@@ -47,5 +44,3 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 
     </div>
 </main>
-
-
