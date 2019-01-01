@@ -31,6 +31,7 @@ require_once("Head.php");
         <p>Geen paniek! Bij “De kans*” worden veiligheidsmaatregelen getroffen, zodat we het toneelstuk veilig op de scène kunnen zetten. (Of je het einde van de voorstelling haalt, is nog onduidelijk.) </p>
         <p>Kom dus zeker auditie doen! </p>
         <p style="font-size:11">*Dat u deze voorstelling overleeft, is minimaal</p>
+        <a href="huidige_productie.php" class="leesmeer">lees meer</a>
       </article>
 
 
