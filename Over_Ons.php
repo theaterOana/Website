@@ -32,23 +32,21 @@ require_once("Head.php");
 
     <div class="row col-10 offset-1">
 
-      <div class="col-md-4">
-          <figure>
-              <img src="images/Elien.jpg" alt="Elien Van Aerde">
-              <figcaption>Elien Van Aerde</figcaption>
-          </figure>
-        </div>
         <div class="col-md-4">
             <figure>
-                <img src="images/Sylke.jpg" alt="Sylke Vanrietvelde">
-                <figcaption>Sylke Vanrietvelde</figcaption>
+                <img src="images/Elien.jpg" alt="Elien Van Aerde">
+                <figcaption>Elien Van Aerde</figcaption>
+            </figure>
+        </div>
+
+
+        <div class="col-md-4">
+            <figure>
+                <img src="images/Jonas.jpg" alt="Jonas Hoste">
+                <figcaption>Jonas Hoste</figcaption>
             </figure>
 
         </div>
-
-
-
-
         <div class="col-md-4">
             <figure>
                 <img src="images/Matthias.jpg" alt="Matthias Bruynooghe">
@@ -56,6 +54,8 @@ require_once("Head.php");
             </figure>
 
         </div>
+
+
 
 
         <div class="col-md-4">
@@ -66,13 +66,7 @@ require_once("Head.php");
 
         </div>
 
-        <div class="col-md-4">
-            <figure>
-                <img src="images/Jonas.jpg" alt="Jonas Hoste">
-                <figcaption>Jonas Hoste</figcaption>
-            </figure>
 
-        </div>
         <div class="col-md-4">
             <figure>
                 <img src="images/Jasper.jpg" alt="Jasper Hardy">

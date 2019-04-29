@@ -14,7 +14,7 @@ header::after {
     left: 0;
     height: 50px;
     background: #333;
-    background: linear-gradient(var(--main), var(--sub) );
+    background: -webkit-linear-gradient(bottom, hsla(0, 0%, 0%, 0) 0, var(--main) 100%)
 }
 
 header, nav {
@@ -103,6 +103,10 @@ form #message {
 
 li {
     max-width: none !important
+}
+
+h2{
+    font-size: 1.5rem
 }
 
 @media (min-width: 768px) {
@@ -231,7 +235,7 @@ html body {
 
 
     .leesmeer {
-        color: #000;
+        color: #fff;
         text-align: right;
         padding-right: 3vw;
         display: block;

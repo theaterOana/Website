@@ -1,6 +1,6 @@
 <?php
 
-require_once("Head.php");
+require_once("../Head.php");
  ?>
 
 
@@ -11,7 +11,7 @@ require_once("Head.php");
         <p style="font-weight:bold ">Ook in 2019 hebben we allemaal nieuwe voornemens, zoals meer sporten, gezonder eten, beter studeren, meer bij grootouders op bezoek gaan… De kans dat we die voornemens volhouden is echter niet zo groot. We laten ons snel verleiden door een avondje in de zetel, met een zakje chips, kijkend naar de televisie. Dag voornemens! </p>
         <p>De kans dat er iets onverwachts gebeurt tijdens zo’n avondje in de zetel, is eerder klein. We zijn veilig in ons eigen huis. Of toch niet?! Bij Anaïs thuis gebeuren er vreemde dingen en er vallen zelfs doden! Is het haar verbeelding die op volle toeren draait, of is dit alles realiteit?</p>
         <p>Geen paniek! Bij “De kans*” worden veiligheidsmaatregelen getroffen, zodat we het toneelstuk veilig op de scène kunnen zetten. (Of je het einde van de voorstelling haalt, is nog onduidelijk.) </p>
-        <p>Kom dus zeker auditie doen!  via  <a href="https://goo.gl/forms/DdmggFXDcpf3Xk2H2">dit inschrijvingsformulier</a></p>
+        <p>De inschrijvingen voor de auditie zijn gesloten. Als je je hebt ingeschreven en nog geen reactie hebt gehad stuur ons dan een mailtje. </p>
         <p style="font-size:11">*Dat u deze voorstelling overleeft, is minimaal</p>
 
         <img src="/images/DeKansAuditieFlyer.jpg" alt="Auditie Flyer 'De Kans*' schrijf je in op de google form hierboven">
@@ -24,5 +24,5 @@ require_once("Head.php");
 
   <?php
 
-  require_once("Tail.php");
+  require_once("/Tail.php");
    ?>

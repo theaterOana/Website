@@ -1,6 +1,6 @@
 <?php
 
-require_once("Head.php");
+require_once("../Head.php");
  ?>
 
 
@@ -19,5 +19,5 @@ require_once("Head.php");
 
   <?php
 
-  require_once("Tail.php");
+  require_once("../Tail.php");
    ?>
