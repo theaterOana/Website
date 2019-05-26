@@ -35,7 +35,7 @@ main {
 }
 
 article , .frame {
-    margin-top: 5vh;
+    margin-top: 10vh;
     border-bottom: 1px grey solid
 }
 
@@ -143,7 +143,6 @@ html body {
         background: url(../media/Oana_Icon.png) 50% 16px no-repeat;
         background-size: 75px;
         background-color: var(--main);
-        padding-top: 0px;
         border-radius: 50px 0;
         border: 8px double #66081e
     }
