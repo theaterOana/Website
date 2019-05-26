@@ -17,7 +17,6 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
         <p style="font-size:11">*Dat u deze voorstelling overleeft, is minimaal</p>
         <img src="/images/fleyerDeKans.png" alt="Flyer 'De Kans*' Voorstellingen op 14, 20 en 21 september 2019 in regie van Lotte Cools. Naar de tekst van Tom Bruynooghe.">
 
-        <a href="huidige_productie.php" class="leesmeer">lees meer</a>
       </article>
 </div>
 
