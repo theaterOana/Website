@@ -112,7 +112,7 @@ h2{
 @media (min-width: 768px) {
 
     article> :first-child, .frame> :first-child, figure> :first-child {
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .col-md-2 {
         -webkit-box-flex: 0;
