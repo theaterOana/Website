@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
   <main class="col-md-10 offset-sm-1 ">
     <div class="row">
-      <div class="col-md-12 frame">
+      <div class="col-md-12">
       <article>
         <h1>De kans*</h1>
         <p>De kans dat er iets onverwachts gebeurt tijdens zo’n avondje in de zetel, is eerder klein. We zijn veilig in
