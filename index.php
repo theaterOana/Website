@@ -11,6 +11,18 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
   <div class="row">
 
+  <div class=" col-sm-12">
+      <article>
+        <h1>Tombola</h1>
+      <p>Op 31/05 worden de winnende nummers getrokken voor de tombola. De trekking zal live te volgen zijn op Facebook en de nummers zulllen op de Facebook-pagina en hier terug te vinden zijn.</p>
+      <p>Als uw nummer gewonnen heeft neem dan contact op via Facebook of mail naar info@theater-oana.be . De prijzen kunnen dan worden opgehaald mits vertoon van een winnend lot.</p>
+      <p>De prijzen zijn vrij te kiezen uit de resterende prijzen wanneer je mag kiezen. Wie eerst komt zal eerst mogen kiezen.</p>
+      <p>volg zeker <a href="https://www.facebook.com/TheaterOana/">onze Facebook-pagina</a> voor meer informatie</p>
+     </article>
+
+
+    </div>
+
     <div class=" col-sm-12">
       <article>
         <h1>De kans*</h1>
