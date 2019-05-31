@@ -28,7 +28,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 51 55 59 <br>
 60 66 <br>
 71 72 74 75 78 <br>
-80 8 87 <br>
+80 85 87 <br>
 96 98 <br>
 102 106 108 <br>
 110 111 112 113 117 118 <br>
