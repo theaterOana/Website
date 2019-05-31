@@ -18,6 +18,24 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
       <p>Als uw nummer gewonnen heeft neem dan contact op via Facebook of mail naar info@theater-oana.be . De prijzen kunnen dan worden opgehaald mits vertoon van een winnend lot.</p>
       <p>De prijzen zijn vrij te kiezen uit de resterende prijzen wanneer je mag kiezen. Wie eerst komt zal eerst mogen kiezen.</p>
       <p>volg zeker <a href="https://www.facebook.com/TheaterOana/">onze Facebook-pagina</a> voor meer informatie</p>
+
+      <p>De winnende loten zijn</p>
+      <p>5 6 9
+11 12 15 17 18 <br>
+20 21 <br>
+34 37 <br>
+40 41 43 44 48 <br>
+51 55 59 <br>
+60 66 <br>
+71 72 74 75 78 <br>
+80 8 87 <br>
+96 98 <br>
+102 106 108 <br>
+110 111 112 113 117 118 <br>
+124 125 129 <br>
+130 136 <br>
+147
+</p>
      </article>
 
 
