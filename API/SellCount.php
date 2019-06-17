@@ -26,5 +26,5 @@
 
 
 
-    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats: '.$blockedSeats.'}';
+    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.'}';
 
