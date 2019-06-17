@@ -7,12 +7,13 @@
  */
 
     $amountSold = 0;
-    $htmlSellPage = file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/641') . file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/642'). file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/643');
+    $baseURL = 'https://www.ticketwinkel.be/Event/OrderTickets/';
+    $htmlSellPage = file_get_contents($baseURL . '2175') . file_get_contents($baseURL . '2177') . file_get_contents($baseURL . '2176');
 
 
 
-    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") - 3 - 12*3;
-    $maxSellAmount = 1089;
+    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") - 16*3;
+    $maxSellAmount = 1197;
 
 
 
