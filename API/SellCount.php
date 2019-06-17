@@ -20,10 +20,11 @@
 
 
 // count the red seats, remove the legend and blocked seats
-    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") -3 - 16*3;
+    $blockedSeats = 16*3;
+    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") -3 -$blockedSeats;
     $maxSellAmount = 1197;
 
 
 
-    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.'}';
+    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats: '.$blockedSeats.'}';
 
