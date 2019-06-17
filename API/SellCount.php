@@ -6,9 +6,17 @@
  * Time: 10:38 PM
  */
 
+
+ $eventIdArray = ["2175", "2177", "2176"] ;
     $amountSold = 0;
     $baseURL = 'https://www.ticketwinkel.be/Event/OrderTickets/';
-    $htmlSellPage = file_get_contents($baseURL . '2175') . file_get_contents($baseURL . '2177') . file_get_contents($baseURL . '2176');
+    $htmlSellPage = '';
+    
+    foreach( $eventIdArray as $eventId){
+       $htmlSellPage  =$htmlSellPage . file_get_contents($baseURL . $eventId);
+    };
+    
+
 
 
 // count the red seats, remove the legend and blocked seats
@@ -17,5 +25,5 @@
 
 
 
-    echo '{"sold":'.$amountSold.'}';
+    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.'}';
 
