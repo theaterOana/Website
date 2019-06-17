@@ -11,8 +11,8 @@
     $htmlSellPage = file_get_contents($baseURL . '2175') . file_get_contents($baseURL . '2177') . file_get_contents($baseURL . '2176');
 
 
-
-    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") - 16*3;
+// count the red seats, remove the legend and blocked seats
+    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") -3 - 16*3;
     $maxSellAmount = 1197;
 
 
