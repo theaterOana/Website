@@ -7,24 +7,31 @@
  */
 
 
- $eventIdArray = ["2175", "2177", "2176"] ;
-    $amountSold = 0;
+   $eventIdArray = ["2175", "2177", "2176"] ;
     $baseURL = 'https://www.ticketwinkel.be/Event/OrderTickets/';
-    $htmlSellPage = '';
+    $clickableSeats = array();
+    $seatsCounted = array();
     
     foreach( $eventIdArray as $eventId){
-       $htmlSellPage  =$htmlSellPage . file_get_contents($baseURL . $eventId);
+       $htmlSellPage = file_get_contents($baseURL . $eventId);
+      array_push($clickableSeats, substr_count($htmlSellPage, "toggleReservationItem"));
+      array_push($seatsCounted, substr_count($htmlSellPage, "CCDeBrouckère"));
     };
     
 
 
 
 // count the red seats, remove the legend and blocked seats
-    $blockedSeats = 16*3;
-    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") -3 -$blockedSeats;
-    $maxSellAmount = 1197;
+    $blockedSeats = 12 + 4;
+    $amountSold = array_sum($seatsCounted) - array_sum($clickableSeats) - ($blockedSeats * (count($eventIdArray)));
+   $maxSellAmount = array_sum($seatsCounted) - ($blockedSeats * (count($eventIdArray)));
+
+   //get sold per day
+   $soldPerDay = array();
+   foreach (array_keys($seatsCounted + $clickableSeats ) as $key) {
+       $soldPerDay[$key] = $seatsCounted[$key] - $clickableSeats[$key] - $blockedSeats;
+   }
 
 
-
-    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.'}';
+    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.', "soldPerDay":'. json_encode($soldPerDay) . ' }';
 
