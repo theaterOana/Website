@@ -16,7 +16,7 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
         <div class="col-md-12 " >
 <div class="frame">
 <h2> Aantal verkochte tickets</h2>
-<h2 id="sold">{ticketsSold}</h2>
+<h2 id="sold">{{ticketsSold}}</h2>
 
 
 
