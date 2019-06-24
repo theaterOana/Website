@@ -3,7 +3,8 @@
 class Repo
 {
 
-    private $servername = "www90.totaalholding.nl:3306";
+    private $servername = "www90.totaalholding.nl";
+    private $port = 3306;
     private $username = "theate1q_VoorLeden";
     private $password = "(V+$?%!~f}UX";
 
@@ -24,7 +25,7 @@ class Repo
     public function getAllLeden()
     {
         try {
-            $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
+            $conn = new PDO("mysql:host=$this->servername; port = $this->port; port = this->portdbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("SELECT * FROM `Leden2018` ");
@@ -53,7 +54,7 @@ class Repo
     {
 
         try {
-            $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
+            $conn = new PDO("mysql:host=$this->servername; port = $this->port;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("SELECT Active FROM `Leden2018` WHERE UserName LIKE :UserName");
@@ -71,7 +72,7 @@ class Repo
     public function getPasswordForUser($username)
     {
         try {
-            $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
+            $conn = new PDO("mysql:host=$this->servername; port = $this->port;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("SELECT Wachtwoord FROM `Leden2018` WHERE UserName LIKE :UserName");
@@ -89,7 +90,7 @@ class Repo
     {
         try {
             $Wachtwoord = password_hash($Wachtwoord, PASSWORD_DEFAULT);
-            $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
+            $conn = new PDO("mysql:host=$this->servername; port = $this->port;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("INSERT INTO `Leden2018`(`Voornaam`, `Familienaam`, `Wachtwoord`, `Active`, `UserName`) VALUES (:Voornaam,:Familienaam,:Wachtwoord,false ,:Username)");
