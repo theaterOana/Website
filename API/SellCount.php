@@ -6,7 +6,10 @@
  * Time: 10:38 PM
  */
 
-
+if (apc_exists("OanaTicketsSold")){
+  echo apc_fetch("OanaTicketsSold");
+}
+else{
    $eventIdArray = ["2175", "2177", "2176"] ;
     $baseURL = 'https://www.ticketwinkel.be/Event/OrderTickets/';
     $clickableSeats = array();
@@ -33,5 +36,10 @@
    }
 
 
-    echo '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.', "soldPerDay":'. json_encode($soldPerDay) . ' }';
+ $response = '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.', "soldPerDay":'. json_encode($soldPerDay) . ' }';
+ apc_add ( "OanaTicketsSold" , $response, 3600 );
+
+
+    echo $response;
+  }
 
