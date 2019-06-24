@@ -1,4 +1,4 @@
-
+import axios from "axios";
 var app = new Vue({
     el: '#sold',
     data () {
@@ -7,11 +7,8 @@ var app = new Vue({
         }
     },
     mounted () {
-        this.$http.get('theater-oana.be/API/SellCount.php', function(data, status, request){
-            if(status == 200)
-            {
-              this.sold = (JSON.parse(data)).sold;
-            }
-          });
+        axios
+          .get('theater-oana.be/API/SellCount.php')
+          .then(response => (this.sold = response.sold))
       }
 })
