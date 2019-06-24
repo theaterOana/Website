@@ -6,8 +6,8 @@
  * Time: 10:38 PM
  */
 
-if (apc_exists("OanaTicketsSold")){
-  echo apc_fetch("OanaTicketsSold");
+if (apcu_exists("OanaTicketsSold")){
+  echo apcu_fetch("OanaTicketsSold");
 }
 else{
    $eventIdArray = ["2175", "2177", "2176"] ;
@@ -37,7 +37,7 @@ else{
 
 
  $response = '{"sold":'.$amountSold.', "maxSeats": '.$maxSellAmount.', "blockedSeats": '.$blockedSeats.', "soldPerDay":'. json_encode($soldPerDay) . ' }';
- apc_add ( "OanaTicketsSold" , $response, 3600 );
+ apcu_add ( "OanaTicketsSold" , $response, 3600 );
 
 
     echo $response;
