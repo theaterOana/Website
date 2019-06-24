@@ -103,7 +103,7 @@ class Repo
             return true;
         } catch (PDOException $e) {
 
-            echo ($e);
+         //   echo ($e);
             return false;
         }
     }
