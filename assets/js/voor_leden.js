@@ -8,7 +8,7 @@ var app = new Vue({
     },
     mounted () {
         axios
-          .get('theater-oana.be/API/SellCount.php')
+          .get('API/SellCount.php')
           .then(response => (this.sold = response.sold))
       }
 })
