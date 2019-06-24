@@ -16,30 +16,7 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
         <div class="col-md-12 " >
 <div class="frame">
 
-    <?php
-    $amountSold = 0;
-    $htmlSellPage = file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/641') . file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/642'). file_get_contents('https://www.ticketwinkel.be/Event/OrderTickets/643');
-
-
-
-    $amountSold = $amountSold + substr_count("$htmlSellPage", "sofa_red") - 3 - 12*3;
-    $maxSellAmount = 1089;
-
-    echo "<p>".$amountSold." tickets verkocht</p>"
-
-
-
-
-
-
-
-
-
-    ?>
-
-    <p>500 tickets: filmnamiddag met hapje en drankje</p>
-    <p>750 tickets:  terugkomdag in november in de Kegel of Yeti</p>
-    <p>1000 tickets: groepsreis  naar Efteling</p>
+<p>Binnenkort komt hier de info over verkochte tickets en beloningen</p>
 </div>
 
 
