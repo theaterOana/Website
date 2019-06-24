@@ -1,4 +1,4 @@
-import axios from "axios";
+
 var app = new Vue({
     el: '#sold',
     data () {
