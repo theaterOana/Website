@@ -27,7 +27,7 @@ class Repo
             $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT * FROM `Leden2018` ");
+            $stmt = $conn->prepare("SELECT * FROM `Leden2019` ");
             $stmt->execute();
             $result = $stmt->fetchAll();
 
@@ -56,7 +56,7 @@ class Repo
             $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT Active FROM `Leden2018` WHERE UserName LIKE :UserName");
+            $stmt = $conn->prepare("SELECT Active FROM `Leden2019` WHERE UserName LIKE :UserName");
             $stmt->bindValue(":UserName", $UserName);
             $stmt->execute();
             $result = $stmt->fetchAll();
@@ -74,7 +74,7 @@ class Repo
             $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT Wachtwoord FROM `Leden2018` WHERE UserName LIKE :UserName");
+            $stmt = $conn->prepare("SELECT Wachtwoord FROM `Leden2019` WHERE UserName LIKE :UserName");
             $stmt->bindValue(":UserName", $username);
             $stmt->execute();
             $result = $stmt->fetchAll();
@@ -92,7 +92,7 @@ class Repo
             $conn = new PDO("mysql:host=$this->servername;dbname=theate1q_spelers", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("INSERT INTO `Leden2018`(`Voornaam`, `Familienaam`, `Wachtwoord`, `Active`, `UserName`) VALUES (:Voornaam,:Familienaam,:Wachtwoord,false ,:Username)");
+            $stmt = $conn->prepare("INSERT INTO `Leden2019`(`Voornaam`, `Familienaam`, `Wachtwoord`, `Active`, `UserName`) VALUES (:Voornaam,:Familienaam,:Wachtwoord,false ,:Username)");
             $stmt->bindValue(":Voornaam", $Voornaam);
             $stmt->bindValue(":Familienaam", $Famielienaam);
             $stmt->bindValue(":Wachtwoord", $Wachtwoord);
