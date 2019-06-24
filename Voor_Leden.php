@@ -15,7 +15,7 @@ function loggedIn(){
         $_SESSION["LoggedIn"] = false;
         notLoggedIn();
     }
-    else{require_once("VoorLedenLoggedIn.php");}
+    require_once("VoorLedenLoggedIn.php");
 }
 
 function notLoggedIn(){
