@@ -3,12 +3,12 @@ var app = new Vue({
     el: '#sold',
     data () {
         return {
-            sold : "Aan het laden"
+            ticketsSold : "Aan het laden"
         }
     },
     mounted () {
         axios
           .get('API/SellCount.php')
-          .then(response => (this.sold = response.sold))
+          .then(response => (this.ticketsSold = response.sold))
       }
 })
