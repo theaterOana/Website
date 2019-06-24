@@ -33,6 +33,8 @@ function notLoggedIn(){
 }
 
 function register(){
+    if( $GLOBALS["db"]->Register($_POST["Voornaam"],$_POST["Familienaam"],$_POST["Wachtwoord"], $_POST["UserName"])){
+    
     echo("
                      
                      <div class='frame'>
@@ -42,7 +44,16 @@ function register(){
                      
                      ");
 
-    $GLOBALS["db"]->Register($_POST["Voornaam"],$_POST["Familienaam"],$_POST["Wachtwoord"], $_POST["UserName"]);
+    }else{
+        echo("
+                     
+        <div class='frame'>
+        <p>Er is een fout opgetreden, contacteer Matthias AUB</p>
+        
+       </div>
+        
+        ");
+    }
 
 
 }
