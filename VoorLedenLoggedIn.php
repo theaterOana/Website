@@ -28,6 +28,8 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
     </div>
 </main>
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="/assets/js/voor_leden.js"></script>
 
 
