@@ -10,9 +10,9 @@ var app = new Vue({
         axios
           .get('API/SellCount.php')
           .then(response => {
-            console.log(response.sold);
+            console.log(response.data.sold);
             console.log(response)
-            this.ticketsSold = response.sold}
+            this.ticketsSold = response.data.sold}
             )
       }
 })
