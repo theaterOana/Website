@@ -15,8 +15,11 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
     <div class="row">
         <div class="col-md-12 " >
 <div class="frame">
+<h2> Aantal verkochte tickets</h2>
+<h2 id="sold">{ticketsSold}</h2>
 
-<p>Binnenkort komt hier de info over verkochte tickets en beloningen</p>
+
+
 </div>
 
 
@@ -24,5 +27,8 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 
     </div>
 </main>
+
+<script src="/assets/js/voor_leden.js"></script>
+
 
 
