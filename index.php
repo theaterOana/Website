@@ -11,6 +11,19 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
   <div class="row">
 
+  <div class=" col-sm-12">
+      <article>
+
+<h1>De Kans*</h1>
+<p> Onze première zit er op, maar op 20 en 21 september heb je nog een kans om te komen kijken! Hier alvast een voorsmaakje.</p>
+<video width="320" height="240" controls>
+  <source src="images\DE KANS FB 2019 1 .mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+      </article>
+
+
+    </div>
 
 
   <div class=" col-sm-12">
@@ -33,35 +46,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
     </div>
 
 
-  <div class=" col-sm-12">
-      <article>
-        <h1>Tombola</h1>
-      <p>Op 31/05 worden de winnende nummers getrokken voor de tombola. De trekking zal live te volgen zijn op Facebook en de nummers zulllen op de Facebook-pagina en hier terug te vinden zijn.</p>
-      <p>Als uw nummer gewonnen heeft neem dan contact op via Facebook of mail naar info@theater-oana.be . De prijzen kunnen dan worden opgehaald mits vertoon van een winnend lot.</p>
-      <p>De prijzen zijn vrij te kiezen uit de resterende prijzen wanneer je mag kiezen. Wie eerst komt zal eerst mogen kiezen.</p>
-      <p>volg zeker <a href="https://www.facebook.com/TheaterOana/">onze Facebook-pagina</a> voor meer informatie</p>
-
-      <p>De winnende loten zijn</p>
-      <p>5 6 9
-11 12 15 17 18 <br>
-20 21 <br>
-34 37 <br>
-40 41 43 44 48 <br>
-51 55 59 <br>
-60 66 <br>
-71 72 74 75 78 <br>
-80 85 87 <br>
-96 98 <br>
-102 106 108 <br>
-110 111 112 113 117 118 <br>
-124 125 129 <br>
-130 136 <br>
-147
-</p>
-     </article>
-
-
-    </div>
+ 
 
 
 
