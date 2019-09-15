@@ -25,7 +25,7 @@ else{
 
 
 // count the red seats, remove the legend and blocked seats
-    $blockedSeats =  4;
+    $blockedSeats =  6;
     $amountSold = array_sum($seatsCounted) - array_sum($clickableSeats) - ($blockedSeats * (count($eventIdArray)));
    $maxSellAmount = array_sum($seatsCounted) - ($blockedSeats * (count($eventIdArray)));
 
