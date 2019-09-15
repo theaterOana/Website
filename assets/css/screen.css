@@ -39,7 +39,7 @@ article , .frame {
     border-bottom: 1px grey solid
 }
 
-video{
+iframe{
     margin-left: auto;
     margin-right: auto;
     display: block;

@@ -16,10 +16,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
 <h1>De Kans*</h1>
 <p> Onze première zit er op, maar op 20 en 21 september heb je nog een kans om te komen kijken! Hier alvast een voorsmaakje.</p>
-<video width="500" height="500" preload="none" controls>
-  <source src="images\DE KANS FB 2019 1 .mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sWQSr15g8Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
 
