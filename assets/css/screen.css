@@ -39,6 +39,18 @@ article , .frame {
     border-bottom: 1px grey solid
 }
 
+video{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+video::selection {
+    background: none; /* WebKit/Blink Browsers */
+  }
+  video::-moz-selection {
+    background: none; /* Gecko Browsers */
+  }
+
 .leesmeer, .navbar-dark .navbar-nav .nav-link.active {
     color: #710a25
 }
