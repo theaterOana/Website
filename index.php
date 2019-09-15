@@ -16,7 +16,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
 <h1>De Kans*</h1>
 <p> Onze première zit er op, maar op 20 en 21 september heb je nog een kans om te komen kijken! Hier alvast een voorsmaakje.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sWQSr15g8Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="280" height="450" src="https://www.youtube.com/embed/sWQSr15g8Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
 
