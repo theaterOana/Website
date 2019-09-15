@@ -16,6 +16,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
 <h1>De Kans*</h1>
 <p> Onze première zit er op, maar op 20 en 21 september heb je nog een kans om te komen kijken! Hier alvast een voorsmaakje.</p>
+<p>Tickets zijn nog altijd te koop op <a href="https://www.ticketwinkel.be/Event/Details/de-kans">Ticketwinkel</a> of aan de deur.</p>
 <iframe width="280" height="450" src="https://www.youtube.com/embed/sWQSr15g8Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
 
