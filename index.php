@@ -20,7 +20,9 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 <p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het allemaal overleeft hebben.</p>
 <p>Hopelijk zijn jullie er volgend jaar weer, want wij beginnen er binenkort weer aan.</p>
 <p>Hou deze website en je mails in de gaten om op de hoogte te blijven van onze aankomende events.</p>
-      </article>
+     
+<img src="/images/DeKansGroup.png" alt="Groepsfoto van de spelers van de kans*">
+</article>
 
 
     </div>
