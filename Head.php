@@ -1,3 +1,15 @@
+<?php
+$_url = $_SERVER['REQUEST_URI'];
+$_url = explode('.', $_url)[0];
+$_url = explode('/', $_url);
+
+$_url = $_url[1];
+if($_url == "index" || $_url == "Index"|| $_url == "") {
+$_breadcrum =  "Home";
+} else{
+$_breadcrum = str_replace("_", " ", $_url);
+} ?>
+
 <!DOCTYPE html lang="nl">
 <html>
 
