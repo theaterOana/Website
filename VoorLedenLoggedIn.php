@@ -17,7 +17,6 @@ if (!isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]){
 <div class="frame">
 <h2> Aantal verkochte tickets</h2>
 <h2 id="sold">356</h2>
-<p>Bedankt dat je de pagina nog eens bekijkt. Binnenkort weten we het echte aantal verkochtte tickets. Kom binnenkort nog eens terug.</p>
 
 
 
