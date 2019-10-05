@@ -10,8 +10,8 @@ $_breadcrum =  "Home";
 $_breadcrum = str_replace("_", " ", $_url);
 } ?>
 
-<!DOCTYPE html lang="nl">
-<html>
+<!DOCTYPE html >
+<html lang="nl">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
