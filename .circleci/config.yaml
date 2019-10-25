@@ -1,7 +1,5 @@
 version: 2
 jobs:
-  build:
-    #...
   deploy-master:
     machine:
       enabled: true
