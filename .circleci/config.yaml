@@ -1,22 +1,20 @@
-version: 2
+version: 2.1
 jobs:
   deploy-master:
-    machine:
-      enabled: true
+    docker:
+      - image: circleci/php:
     steps:
       - run:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "cd www; git pull"
   deploy-drupal:
-    machine:
-      enabled: true
+    - image: circleci/php:
     steps:
       - run:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "cd dev.theater-oana.be; git pull"
-
 workflows:
   version: 2
   build-and-deploy:
