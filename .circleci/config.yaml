@@ -1,34 +1,11 @@
 version: 2.1
 jobs:
-  deploy-master:
+  build:
     docker:
-      - image: circleci/php:
+      - image: alpine:3.7
     steps:
       - run:
-          name: Deploy Over SSH
+          name: The First Step
           command: |
-            ssh $SSH_USER@$SSH_HOST "cd www; git pull"
-  deploy-drupal:
-    - image: circleci/php:
-    steps:
-      - run:
-          name: Deploy Over SSH
-          command: |
-            ssh $SSH_USER@$SSH_HOST "cd dev.theater-oana.be; git pull"
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-      - build
-      - deploy-master:
-          requires:
-            - deploy-master
-          filters:
-            branches:
-              only: master
-      - deploy-drupal:
-          requires:
-            - deplay-drupal
-          filters:
-            branches:
-              only: drupal-site
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
