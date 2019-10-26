@@ -8,8 +8,6 @@ jobs:
           name: Deploy Over SSH
           command: |
               ssh $SSH_USER@$SSH_HOST "cd www; git pull"
-    branches:
-        only: master
   deploy-drupal:
     machine:
       image: ubuntu-1604:201903-01
@@ -18,7 +16,15 @@ jobs:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "cd dev.theater-oana.be; git pull"
-    branches:
-      only: drupal-theme
 workflows:
-
+  version: 2
+  build-and-deploy:
+    jobs:
+      - deploy-master:
+          filters:
+            branches:
+              only: master
+      - deploy-drupal:
+          filters:
+            branches:
+               only: drupal-theme
