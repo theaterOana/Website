@@ -2,14 +2,15 @@ version: 2
 jobs:
   deploy-master:
     docker:
-      - image: circleci/php
+      image: circleci/php
     steps:
       - run:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "cd www; git pull"
   deploy-drupal:
-      - image: circleci/php
+    docker:
+      image: circleci/php
     steps:
       - run:
           name: Deploy Over SSH
@@ -19,7 +20,6 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build
       - deploy-master:
           requires:
             - deploy-master
@@ -28,7 +28,7 @@ workflows:
               only: master
       - deploy-drupal:
           requires:
-            - deplay-drupal
+            - deploy-drupal
           filters:
             branches:
-              only: drupal-site
+              only: drupal-theme
