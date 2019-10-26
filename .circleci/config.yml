@@ -1,8 +1,8 @@
 version: 2
 jobs:
   deploy-master:
-    docker:
-      image: circleci/php
+    machine:
+      image: ubuntu-1604:201903-01
     steps:
       - run:
           name: Deploy Over SSH
