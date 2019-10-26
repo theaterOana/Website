@@ -2,29 +2,21 @@ version: 2
 jobs:
   deploy-master:
     machine:
-     - image: ubuntu-1604:201903-01
+      image: ubuntu-1604:201903-01
     steps:
-      - run:
+      run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "cd www; git pull"
+              ssh $SSH_USER@$SSH_HOST "cd www; git pull"
+      branches:
+          only: master
   deploy-drupal:
-    docker:
-      image: circleci/php
+    machine:
+      image: ubuntu-1604:201903-01
     steps:
-      - run:
+      run:
           name: Deploy Over SSH
           command: |
             ssh $SSH_USER@$SSH_HOST "cd dev.theater-oana.be; git pull"
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-      - deploy-master:
-          filters:
-            branches:
-              only: master
-      - deploy-drupal:
-          filters:
-            branches:
-              only: drupal-theme
+      branches:
+        only: drupal-theme
