@@ -9,7 +9,7 @@ jobs:
           command: |
             ssh $SSH_USER@$SSH_HOST "cd www; git pull"
   deploy-drupal:
-    - image: circleci/php:
+    - image: circleci/php
     steps:
       - run:
           name: Deploy Over SSH
