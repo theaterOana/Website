@@ -21,14 +21,10 @@ workflows:
   build-and-deploy:
     jobs:
       - deploy-master:
-          requires:
-            - deploy-master
           filters:
             branches:
               only: master
       - deploy-drupal:
-          requires:
-            - deploy-drupal
           filters:
             branches:
               only: drupal-theme
