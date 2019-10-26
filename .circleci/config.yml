@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy-master:
     docker:
-      - image: circleci/php:
+      - image: circleci/php
     steps:
       - run:
           name: Deploy Over SSH
