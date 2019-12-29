@@ -69,7 +69,7 @@ video::selection {
 }
 
 .navbar-dark .navbar, .navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-nav .nav-link {
-    color: #e30000;
+    color: var(--bordeaux);
     font-size: 2rem
 }
 
