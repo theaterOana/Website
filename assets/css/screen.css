@@ -1,4 +1,4 @@
-#
+
 div input, form label {
     min-width: 200px
 }
@@ -22,7 +22,7 @@ header::after {
 
 header, nav {
     background-color: var(--main);
-    height: 120px;
+    height: none;
 }
 
 
@@ -158,6 +158,10 @@ html body {
     main .col-sm-12 {
         max-width: 100%
     }
+
+    header{
+        height: 120px;
+    }
 /*Frame tekst*/
     article, figure, .frame {
         content: normal;
@@ -174,6 +178,7 @@ html body {
     }
 
     .navbar-nav, .navbar {
+        height: 100%;
         width: 100%;
         margin: none;
         margin-left: auto;
