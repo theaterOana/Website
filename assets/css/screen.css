@@ -20,7 +20,7 @@ header::after {
 
 header, nav {
     background-color: var(--main);
-    height: 120px;
+    height: 90px;
 }
 body {
 background-color: var(--sub)
