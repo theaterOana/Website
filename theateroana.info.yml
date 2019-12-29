@@ -1,0 +1,10 @@
+name: Theater O'ana
+type: theme
+base theme: stark
+core: 8.x
+libraries:
+  - theateroana/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer
