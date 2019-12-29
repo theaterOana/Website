@@ -4,7 +4,8 @@ div input, form label {
 
 :root {
     --main: #c8c8c8;
-    --sub: #fff3db
+    --sub: #fff3db;
+    --bordeaux: #66081e;
 }
 
 header::after {
@@ -68,7 +69,7 @@ video::selection {
 }
 
 .navbar-dark .navbar, .navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #e30000;
     font-size: 2rem
 }
 
