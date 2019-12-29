@@ -11,23 +11,38 @@ require_once("Head.php");
 
 
             <article class="">
-                <p>Willie Stargell zei ooit: “That’s where the future lies, in the youth of today”.</p>
-
-                <p> Om jongeren uit Torhout en omstreken een kans op en naast het podium te geven, werd op 10 maart 2018
-                    een nieuwe vereniging gestart. De producties worden grotendeels door en voor jongeren gemaakt met
-                    daarnaast ondersteuning van volwassenen.</p>
-
-                <p> Theater O’ana is dus een gloednieuwe vereniging die jongeren de kans wil geven om ervaring op te
-                    doen in de theaterwereld. Elk jaar brengen we een nieuwe productie, telkens onder leiding van een
-                    andere regisseur.</p>
-
+                
+            
+                <h>Visie<h>
+                <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br>
+                Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br>
+                Een groep dat samen lacht en beleefd, met activiteiten het hele jaar door.
+                                    
+                </p>
             </article>
 
 
         </div>
     </div>
 
+    <div class="row">
 
+        <div class="col-10 offset-1">
+
+
+            <article class="">
+        
+    
+                <h>Ontstaan<h>
+                <p>Willie Stargell zei ooit: “That’s where the future lies, in the youth of today”.</p>
+
+                <p> Theater O’ana werd opgericht om jongeren de kans te geven om ervaring op te
+                doen in de theaterwereld. Hierdoor zag deze vereniging op 10 maart 2018 het levenslicht. </p>
+
+
+            </article>
+        </div>
+    </div>
 
 
     <div class="row col-10 offset-1">
@@ -55,16 +70,6 @@ require_once("Head.php");
 
         </div>
 
-
-
-
-        <div class="col-md-4">
-            <figure>
-                <img src="images/Jana.jpg" alt="Jana De Mueleneare">
-                <figcaption>Jana De Mueleneare</figcaption>
-            </figure>
-
-        </div>
 
 
         <div class="col-md-4">
