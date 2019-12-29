@@ -169,7 +169,7 @@ html body {
         background-size: 75px;
         background-color: var(--main);
         border-radius: 25px;
-        border: 16px #66081e
+        border: 8px solid #66081e
     }
 
     article p, .frame p {
