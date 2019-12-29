@@ -120,7 +120,7 @@ li {
 }
 
 h2{
-    font-size: 1.5rem
+    font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -203,12 +203,12 @@ html body {
     }
 
     nav li {
-        padding-left: 2vw;
-        padding-right: 2vw;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 16.66% !important;
+        max-width: 14.30% !important;
 
     }
 
