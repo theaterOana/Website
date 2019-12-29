@@ -14,8 +14,8 @@ require_once("Head.php");
                 
             
                 <h1>Visie</h1>
-                <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br> <br>
-                Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br><br>
+                <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br/> 
+                Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br/>
                 Een groep dat samen lacht en beleefd, met activiteiten het hele jaar door.
                                     
                 </p>
@@ -23,10 +23,6 @@ require_once("Head.php");
 
 
         </div>
-    </div>
-
-    <div class="row">
-
         <div class="col-10 offset-1">
 
 
@@ -43,6 +39,11 @@ require_once("Head.php");
             </article>
         </div>
     </div>
+
+    
+
+        
+ 
 
 
     <div class="row col-10 offset-1">
