@@ -1,0 +1,43 @@
+.logo, #breadcrum, img {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand:focus, .navbar-light .navbar, .navbar-light .navbar-brand {
+  color: white
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffebb9;
+}
+@media (min-width: 992px) {
+/* for navbar */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  padding: 0;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+#Logo {
+  max-width: 10vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar-brand {
+  display: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: white;
+}
+nav li {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}}
