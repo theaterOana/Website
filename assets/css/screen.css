@@ -4,7 +4,7 @@ div input, form label {
 
 :root {
     --main: #a0a0a0;
-    --sub: #fff;
+    --sub: #000;
     --bordeaux: #66081e;
 }
 
@@ -20,7 +20,7 @@ header::after {
 
 header, nav {
     background-color: var(--main);
-    height: 90px;
+    height: 120px;
 }
 body {
 background-color: var(--sub)
