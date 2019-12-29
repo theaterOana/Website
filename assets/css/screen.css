@@ -3,7 +3,7 @@ div input, form label {
 }
 
 :root {
-    --main: #c8c8c8;
+    --main: #a0a0a0;
     --sub: #fff3db;
     --bordeaux: #66081e;
 }
@@ -19,7 +19,8 @@ header::after {
 }
 
 header, nav {
-    background-color: var(--main)
+    background-color: var(--main);
+    height: 120px;
 }
 body {
 background-color: var(--sub)
@@ -188,7 +189,7 @@ html body {
     }
 
     #Logo {
-        max-width: 10vw;
+        max-width: 85px;
         display: block
     }
 
