@@ -7,7 +7,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-              ssh $SSH_USER@$SSH_HOST -p $PORT "cd www; git pull"
+              ssh $SSH_USER@$SSH_HOST -p $PORT "cd www; git fetch --all"
   deploy-drupal:
     machine:
       image: ubuntu-1604:201903-01
