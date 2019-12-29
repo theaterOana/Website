@@ -13,7 +13,7 @@ require_once("Head.php");
             <article class="">
                 
             
-                <h>Visie<h>
+                <h1>Visie<h1>
                 <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br>
                 Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br>
                 Een groep dat samen lacht en beleefd, met activiteiten het hele jaar door.
@@ -33,7 +33,7 @@ require_once("Head.php");
             <article class="">
         
     
-                <h>Ontstaan<h>
+                <h1>Ontstaan</h1>
                 <p>Willie Stargell zei ooit: “That’s where the future lies, in the youth of today”.</p>
 
                 <p> Theater O’ana werd opgericht om jongeren de kans te geven om ervaring op te
