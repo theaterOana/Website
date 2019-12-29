@@ -14,8 +14,8 @@ require_once("Head.php");
                 
             
                 <h1>Visie<h1>
-                <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br>
-                Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br>
+                <p>Theater O'ana dankt zijn naam aan het hawaiianse Ohana. <br> <br>
+                Ohana betekent familie. Familie betekent dat niemand achter gelaten wordt. <br><br>
                 Een groep dat samen lacht en beleefd, met activiteiten het hele jaar door.
                                     
                 </p>
