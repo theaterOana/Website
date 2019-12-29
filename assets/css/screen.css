@@ -54,7 +54,7 @@ video::selection {
   }
 
 .leesmeer, .navbar-dark .navbar-nav .nav-link.active {
-    color: #e30000
+    color: #362c5d
 }
 
 .leesmeer:hover {
@@ -213,7 +213,7 @@ html body {
     }
 
     .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-        color: #ffce44
+        color: #c58e2f
     }
     .nav-item{
         overflow: hidden;
