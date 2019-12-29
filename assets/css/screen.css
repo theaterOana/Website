@@ -1,7 +1,7 @@
 div input, form label {
     min-width: 200px
 }
-
+ 
 :root {
     --main: #7b9ac0;
     --sub: #e6f5ff ;
