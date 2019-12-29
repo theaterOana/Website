@@ -1,7 +1,9 @@
+#
 div input, form label {
     min-width: 200px
 }
- 
+
+/*kleuren*/
 :root {
     --main: #7b9ac0;
     --sub: #e6f5ff ;
@@ -37,7 +39,7 @@ main {
 
 
 }
-
+/* */
 article , .frame {
     margin-top: 10vh;
     border-bottom: 1px grey solid
@@ -156,14 +158,14 @@ html body {
     main .col-sm-12 {
         max-width: 100%
     }
-
+/*Frame tekst*/
     article, figure, .frame {
         content: normal;
         background: url(../media/Oana_Icon.png) 50% 16px no-repeat;
         background-size: 75px;
         background-color: var(--main);
-        border-radius: 50px 0;
-        border: 8px double #66081e
+        border-radius: 25px;
+        border: 16px #66081e
     }
 
     article p, .frame p {
