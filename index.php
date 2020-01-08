@@ -11,7 +11,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
   <div class="row">
 
-    <div>
+    <div class="col-sm-12">
       <article>
         <p>
           Theater O’ana begint het jaar alvast met de aankondiging van onze nieuwe audities! <br>
