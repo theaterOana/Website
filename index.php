@@ -17,7 +17,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
   <div class=" col-sm-12">
       <article>
 <h1>Bedankt!</h1>
-<p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het allemaal overleeft hebben.</p>
+<p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het allemaal overleefd hebben.</p>
 <p>Hopelijk zijn jullie er volgend jaar weer, want wij beginnen er binenkort weer aan.</p>
 <p>Hou deze website en je mails in de gaten om op de hoogte te blijven van onze aankomende events.</p>
      
