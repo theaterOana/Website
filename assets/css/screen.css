@@ -127,6 +127,10 @@ h2{
     font-size: 1.5rem
 }
 
+article a, .frame a{
+    color: var(--bordeaux);
+}
+
 @media (min-width: 768px) {
 
     article> :first-child, .frame> :first-child {
