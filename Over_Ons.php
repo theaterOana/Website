@@ -50,31 +50,29 @@ require_once("Head.php");
                 <figcaption>Elien Van Aerde</figcaption>
             </figure>
         </div>
-
-
         <div class="col-md-4">
             <figure>
                 <img src="images/Jonas.jpg" alt="Jonas Hoste">
                 <figcaption>Jonas Hoste</figcaption>
             </figure>
-
         </div>
         <div class="col-md-4">
             <figure>
                 <img src="images/Matthias.jpg" alt="Matthias Bruynooghe">
                 <figcaption>Matthias Bruynooghe</figcaption>
             </figure>
-
         </div>
-
-
-
+        <div class="col-md-4">
+            <figure>
+                <img src="images/Sylke.jpg" alt="Sylke Vanrietvelde">
+                <figcaption>Sylke Vanrietvelde</figcaption>
+            </figure>
+        </div>
         <div class="col-md-4">
             <figure>
                 <img src="images/Jasper.jpg" alt="Jasper Hardy">
                 <figcaption>Jasper Hardy</figcaption>
             </figure>
-
         </div>
 </main>
 
