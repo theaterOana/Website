@@ -16,7 +16,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
         <p>
           Theater O’ana begint het jaar alvast met de aankondiging van onze nieuwe audities! <br>
           Dankzij deze auditie word je deel van de Theater O’ana familie. <br>
-          Niet elk jaar weer opnieuw auditie! <br>
+          Niet elk jaar opnieuw auditie! <br>
           Wil jij deel uitmaken van onze vaste cast? <br>
           <a href="https://forms.gle/XnjMYWPbsACx91dM7">Schrijf je hier in! </a>
           <img src="/images/Flyer-audities-Theater-Oana-page-001.jpg" alt="">
@@ -27,16 +27,15 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
     <div class=" col-sm-12">
       <article>
-        <h1>Bedankt!</h1>
-        <p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het
-          allemaal overleeft hebben.</p>
-        <p>Hopelijk zijn jullie er volgend jaar weer, want wij beginnen er binenkort weer aan.</p>
-        <p>Hou deze website en je mails in de gaten om op de hoogte te blijven van onze aankomende events.</p>
+<h1>Bedankt!</h1>
+<p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het allemaal overleefd hebben.</p>
+<p>Hopelijk zijn jullie er volgend jaar weer, want wij beginnen er binnenkort weer aan.</p>
+<p>Hou deze website en je mails in de gaten om op de hoogte te blijven van onze aankomende events.</p>
+<img src="images\DeKansGroup.JPG" alt="Groepsfoto van de spelers van de kans*">
+     
+</article>
 
-        <img src="images\DeKansGroup.JPG" alt="Groepsfoto van de spelers van de kans*">
-      </article>
-
-
+        
     </div>
 
 
