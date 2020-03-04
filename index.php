@@ -1,6 +1,6 @@
 <?php
-requireOnce('generic/head.php');
-requireOnce('generic/header.php');
+require_once('generic/head.php');
+require_once('generic/header.php');
 
 
 
@@ -10,4 +10,4 @@ echo 'Hello World';
 
 
 
-requireOnce('generic/foot.php');
+require_once('generic/foot.php');
