@@ -12,4 +12,4 @@
 
 </head>
 <body>
-<script src='assets/js/globalConstants.js'/>
+<script src='assets/js/globalConstants.js'></script>
