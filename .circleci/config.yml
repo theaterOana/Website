@@ -8,14 +8,14 @@ jobs:
           name: Deploy Over SSH
           command: |
               ssh $SSH_USER@$SSH_HOST -p $PORT "cd www; git fetch --all; git reset --hard origin/master"
-  deploy-drupal:
+  deploy-dev:
     machine:
       image: ubuntu-1604:201903-01
     steps:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST -p $PORT "cd dev.theater-oana.be/web/themes/theateroana; git pull"
+            ssh $SSH_USER@$SSH_HOST -p $PORT "cd dev.theater-oana.be/; git pull"
 workflows:
   version: 2
   build-and-deploy:
@@ -24,7 +24,7 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy-drupal:
+      - deploy-dev:
           filters:
             branches:
-               only: drupal-theme
+               only: develop
