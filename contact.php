@@ -73,10 +73,10 @@ require_once("Head.php");
 
 
                   echo '<p>Wij staan open voor vragen, suggesties, opmerkingen… Hiervoor kan je ons bereiken op  <a
-                              href="mailto:info@theater-oana.be">info@theater-oana.be</a> of stuur je een bericht via onderstaand formulier. </p>';
+                              href="mailto:info@theater-oana.be">info@theater-oana.be</a>  </p>';
 
 
-                    echoForm();
+                  //  echoForm();
 
 
                 }
