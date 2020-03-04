@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Theater O'ana</title>
+  <meta name="description" content="Website Of Theater O'ana">
+  <meta name="author" content="Matthias Bruynooghe">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
+<script src='assets/js/globalConstants.js'

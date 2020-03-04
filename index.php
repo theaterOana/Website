@@ -5,8 +5,7 @@ require_once('generic/header.php');
 
 
 echo 'Hello World';
-
-
+echo '<script src="/assets/js/test.js"/>'
 
 
 
