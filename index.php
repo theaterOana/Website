@@ -1,9 +1,10 @@
+<?php
 requireOnce('generic/head.php');
 requireOnce('generic/header.php');
 
 
 
-Hello World
+echo Hello World
 
 
 
