@@ -8,32 +8,47 @@ require_once($_SERVER['DOCUMENT_ROOT']."/Head.php");
 
 <main class="col-md-10 offset-md-1 ">
 
+<div class='row'>
 
-  <div class="row">
-
-    <div class="col-sm-12">
+<div class="col-sm-12">
       <article>
-        <p>
-          Theater O’ana begint het jaar alvast met de aankondiging van onze nieuwe audities! <br>
-          Dankzij deze auditie word je deel van de Theater O’ana familie. <br>
-          Niet elk jaar opnieuw auditie! <br>
-          Wil jij deel uitmaken van onze vaste cast? <br>
-          <a href="https://forms.gle/XnjMYWPbsACx91dM7">Schrijf je hier in! </a>
-          <img src="/images/Flyer-audities-Theater-Oana-page-001.jpg" alt="">
-        </p>
+        <h1 id="Countdown" style="text-align: center">Aftelklok Laden
+</h1>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2022 0:0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("Countdown").innerHTML = days + "d " + hours + "u "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("Countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+       
       </article>
     </div>
+</div>
 
-
-    <div class=" col-sm-12">
-      <article>
-<h1>Bedankt!</h1>
-<p>We bedanken graag iedereen die heeft meegewerkt aan onze productie "De Kans*". We zijn blij dat jullie het allemaal overleefd hebben.</p>
-<p>Hopelijk zijn jullie er volgend jaar weer, want wij beginnen er binnenkort weer aan.</p>
-<p>Hou deze website en je mails in de gaten om op de hoogte te blijven van onze aankomende events.</p>
-<img src="images\DeKansGroup.JPG" alt="Groepsfoto van de spelers van de kans*">
-     
-</article>
 
         
     </div>
